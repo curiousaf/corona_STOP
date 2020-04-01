@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% if type == 'question' %}
+        <h1 class="title is-1">{{ question.text }}</h1>
+        <a href='/test{{ question.yes }}'>
+            <button class="button is-info is-outlined">Yes</button>
+        </a>
+        <a href='/test{{ question.no }}'>
+            <button class="button is-info is-outlined">No</button>
+        </a>
+
+    {% elif type == 'output' %}
+        <h1 class="title is-1">{{ output.text }}</h1>
+
+    {% endif %}
+{% endblock %}

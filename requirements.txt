@@ -1,0 +1,3 @@
+django
+django-countries
+django-admin-list-filter-dropdown
